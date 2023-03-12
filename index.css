@@ -1,0 +1,397 @@
+ /* h1{
+    background-color: rgb(255, 191, 255) ;
+} 
+p{
+    background-color: rgb(141, 214, 202) ;
+    opacity: 0.5;
+}
+table{
+    background-color: rgb(104, 105, 167) ;
+}
+
+
+body{
+    align-items: center;
+} 
+table{
+    padding-left: 50 px;
+}
+body{
+    background-color: rgb(141, 214, 202) ;
+    opacity: 0.5;
+}
+body{
+    background-image: image("C:\Users\Lenovo-Zeeshan\Desktop");
+}
+p{
+    padding-left: 100px;
+} */
+/* Default CSS */
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+
+/* NavBar Styling */
+
+
+
+/* This is used to 
+- Flexbox so that we make the display vertical on phone
+- Maximise the width to the same as the NavBar div
+- Distribute the items to the end 
+*/
+.small-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: rgb(92, 100, 128); */
+    opacity: 330;
+}
+
+
+/* This is used to
+- Remove the underline of a link
+- Make the font-color black 
+*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* This snippet is used to make the image and name in one line and then to vertically center them */
+.logo a{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* This is used to - 
+- Move the name a little far from the IMAGE as it was sticking to it
+- Make the image smaller
+- Make the image circular 
+- Vertically align with the text
+*/
+.logo img{
+    margin-right: 15px;
+    width: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+/* 
+This makes the name a little bigger and vertically aligns with the image */
+.logo h1{
+    font-size: 35px;
+    vertical-align: middle;
+}
+
+/* 
+This is used to
+- Align with the logo div
+- Pad a little for alignment 
+*/
+.nav-right{
+    display: inline;
+    padding: 10px;
+}
+
+
+
+/* 
+This is used to
+- Remove the unordered list styling dot
+- Make all the points aligned
+- Make the text a bit bold
+- Space the things a little
+- Increast the font size 
+*/
+.nav-right ul li{
+    list-style-type: none;
+    display: inline;
+    font-weight: 400;
+    margin-right: 5px;
+    font-size: 22px;
+}
+
+
+/* Introduction */
+
+
+/* This is used to make the two parts inline and will help in responsiveness */
+.introduction{
+    display: flex;
+}
+
+
+/* This is used to
+- Center the text
+- Shift the text a little left
+- Increase the font-size 
+*/
+.introduction h1{
+    margin: auto;
+    margin-left: 0;
+    font-size: 40px;
+    
+}
+
+
+/* This is used to
+- Make the image a bit small
+- Make the image circular
+ */
+.introduction img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+
+
+/* Skills section */
+
+/* This is used to center align the heading in center */
+.heading{
+    text-align: center;
+}
+
+
+/* This is used to
+- Increase the width and height
+- Change the color to reddish
+- Remove the border to make it more clean
+- Change right and left margin to auto to center align it
+- Shift it a little down
+- Make the borders curved
+*/
+hr{
+    width: 100px;
+    height: 10px;
+    background-color: #EB4747;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    border-radius: 25px;
+}
+
+
+/* 
+This is used to
+- Move the images away from the heading
+- Display flex to evenly distribute elements
+*/
+.skills{
+    margin-top:35px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+/* This is used to make the image used in skills smaller */
+.skills a img{
+    width: 80px;
+    border-radius : 50%;
+    
+}
+
+
+/* Projects section */
+
+
+/* This is used to
+- Make the display flex that helps in responsiveness
+*/
+.projects{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* 
+This is used to
+- Align the heading for text in center of each project card
+- Make the font light
+*/
+.project{
+    flex:1;
+    text-align: center;
+    font-weight: 200;
+    width: 30%;
+}
+
+
+/* 
+This is used to adjust the image size
+*/
+.projects img{
+    width: 200px;
+    height: 200px;
+    border-radius : 50%;
+}
+
+
+/* Footer */
+
+
+/* 
+This is used to 
+- Change the background color
+- Shift the footer down
+- Make the text center aligned
+- Change the text color
+- Pad up things
+- Make the top ends smooth
+*/
+.footer{
+    margin-top: 25px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 75px 75px 25px 75px;
+    border-radius: 25px 25px 0 0;
+}
+
+
+/* To change the font and make the heading look bigger */
+.footer h1{
+    font-size: 50px;
+}
+
+
+/* Removing extra padding from container here for alignment */
+.footer .container{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* This is used to-
+- Change the text color
+- Reduce the opacty of text
+- Increase the font size
+*/
+.footer a{
+    color: white;
+    opacity: 0.8;
+    font-size: 25px;
+}
+
+
+
+/* Media Query */
+
+@media(max-width:780px){
+    /* Normal CSS for various parts */
+
+    /* NavBar and the logo*/
+    .navbar .small-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo a{
+        display: block;
+        margin: auto;
+    }
+
+    .logo a img{
+        display: block;
+        margin: auto;       
+    }
+
+
+    /* Introduction */
+
+    .introduction{
+        flex-direction: column-reverse;
+        align-items: center;
+            ext-align: center;
+    }
+
+    .introduction img{
+        margin-bottom:15px;
+    }
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    opacity: calc(300);}
+
+/* ----------------Card Wrapper------------------ */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-wrapper{
+    width: 350px;
+    height: 500px;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px  10px  20px   rgba(0, 0green, 0blue,0.2 ) ;
+    cursor: pointer;
+}
+
+.card-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition :all 0.3s;
+}
+
+
+.profile-details{
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    transform: translate(6%);
+
+}
+
+
+.profile-details h3 , .profile-details p{
+    padding: 10px 25px 10px 10px;
+    transform: translate(100%)  skew(-15deg);
+    transition: all 0.3s;
+    box-shadow: 0 10px 20px rgba(0, 0green, 0blue,0.2 );
+}
+
+.profile-details h3{
+    background-color: #868484;
+    color: rgb(41, 41, 41);
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+.profile-details p{
+    background-color: rgb(126, 126, 126);
+    transition-delay: 0.1s;
+}
+
+.card-wrapper:hover img{
+    transform : scale(1.3) rotate(10deg);
+}
+
+
+.card-wrapper:hover .profile-details h3,
+.card-wrapper:hover .profile-details  p{
+    transform: translate(0) skew(-15deg);
+}
